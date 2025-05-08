@@ -1,0 +1,13 @@
+body{
+    background-color:steelblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+}
+h1{
+    color: springgreen;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-style: italic;
+}
