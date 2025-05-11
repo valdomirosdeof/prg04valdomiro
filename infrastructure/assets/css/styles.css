@@ -1,13 +1,33 @@
+/* REPRESENTAÇÃO DAS CORES DA PALETA*/
+/*Steel Blue: Representa os oceanos.*/
+/*Spring Green: Representa as florestas.*/
+/*Khaki: Representa os desertos.*/
+/*Snow: Representa os polos.*/
+/*As cores foram baseadas no planeta Terra, no qual se encontram os países, que são o tema do projeto.*/
+
 body{
     background-color:steelblue;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:white;
+    color:snow;
 }
-h1{
-    color: springgreen;
+
+.titulo-pagina-inicial{
+    color:springgreen;
     text-align: center;
 }
-p{
+
+.titulo-america-sul{
+    color:springgreen;
+    text-align: center;
+}
+
+.intro-pagina-inicial{
     text-align: center;
     font-style: italic;
+    color:khaki;
+}
+
+pre{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:snow;
 }
