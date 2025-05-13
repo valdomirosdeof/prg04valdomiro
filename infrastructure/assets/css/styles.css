@@ -16,6 +16,11 @@ body{
     text-align: center;
 }
 
+.titulo-brasil{
+    color:springgreen;
+    text-align: center;
+}
+
 .titulo-america-sul{
     color:springgreen;
     text-align: center;
@@ -30,4 +35,8 @@ body{
 pre{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:snow;
+}
+
+footer{
+    text-align:center;
 }
