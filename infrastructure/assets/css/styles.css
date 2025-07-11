@@ -1,67 +1,320 @@
-/* REPRESENTAÇÃO DAS CORES DA PALETA*/
-/*Steel Blue: Representa os oceanos.*/
-/*Spring Green: Representa as florestas.*/
-/*Khaki: Representa os desertos.*/
-/*Snow: Representa os polos.*/
-/*As cores foram baseadas no planeta Terra, no qual se encontram os países, que são o tema do projeto.*/
+/*GERAL*/
 
-body{
-    background-color:steelblue;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:snow;
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-header{
-    color:springgreen;
-    text-align:left;
+/*HOMEPAGE*/
+
+.body-homepage {
+    background-color: grey;
+    color: black;
+    font-size: 12px;
 }
 
-nav#menu{
-    display: block;
+.header-homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
 }
 
-nav#menu a{
-    color: steelblue;
+.title-site {
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.nav-bar-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-bar-menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    padding: 10px;
+}
+
+.nav-bar-menu li:hover {
+    background-color: #333333;
+    color: #f2f2f2;
+}
+
+.nav-bar-menu a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-bar-menu a:hover {
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+.button-login {
+    background-color: #333333;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+.button-login:hover {
+    background-color: black;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+.button-login a {
+    color: white;
+    font-size: 12px;
     text-decoration: none;
 }
 
-nav#menu a:hover{
-    color: steelblue;
-    text-decoration: underline;
+.button-login a:hover {
+    color: #f2f2f2;
+    font-weight: bold;
 }
 
-nav#menu ul{
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute;
-    top: -20px;
-    left: 300px;
-}
-
-nav#menu li{
-    display: inline-block;
-    background-color: snow;
-    color:steelblue;
+.main-homepage {
+    background-color: white;
     padding: 10px;
-    margin: 2px;
-    transition: background-color 1s;
 }
 
-nav#menu li:hover{
-    background-color: springgreen;
-}
-
-.intro-pagina-inicial{
+.main-homepage h1 {
     text-align: center;
-    font-style: italic;
-    color:khaki;
 }
 
-pre{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:snow;
+.main-homepage p {
+    text-align: justify;
 }
 
-footer{
-    text-align:center;
+.footer-homepage {
+    background-color: black;
+    padding: 10px;
+}
+
+.footer-homepage p {
+    color: white;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .body-homepage {
+        font-size: 14px;
+    }
+
+    .title-site {
+        font-size: 42px;
+    }
+
+    .header-homepage {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .nav-bar-menu ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .nav-bar-menu li {
+        padding: 10px;
+    }
+
+    .button-login {
+        align-self: auto;
+    }
+
+    .button-login a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+}
+
+/*LOGIN*/
+
+.body-login {
+    background-color: grey;
+    font-size: 15px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-login {
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-login h1 {
+    font-size: 30px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.remember-checkbox {
+    display: flex;
+    gap: 5px;
+}
+
+.button-submit {
+    background-color: #333333;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    align-self: center;
+    width: 100px;
+    cursor: pointer;
+}
+
+.button-submit:hover {
+    background-color: black;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+input {
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    border: none;
+}
+
+.link-reset-password {
+    text-align: center;
+}
+
+.link-reset-password a {
+    color: grey;
+}
+
+.link-reset-password a:hover {
+    font-weight: bold;
+}
+
+/*ADMINISTRAÇÃO DO SISTEMA*/
+
+.body-system-adm {
+    background-color: grey;
+    font-size: 15px;
+}
+
+.title-system-adm {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.tg {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-spacing: 0;
+}
+
+.tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg .tg-on03 {
+    background-color: #f2f2f2;
+    border-color: inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 15px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tg .tg-cczo {
+    background-color: #333333;
+    border-color: inherit;
+    color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.buttons-column {
+    background-color: #f2f2f2;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.edit-button {
+    background-color: blue;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+.edit-button a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.edit-button a:hover {
+    font-weight: bold;
+}
+
+.delete-button {
+    background-color: red;
+    border: none;
+    padding: 10px;
+}
+
+.delete-button a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.delete-button a:hover {
+    font-weight: bold;
 }
